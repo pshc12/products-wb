@@ -9,7 +9,7 @@ import ProductForm from './_components/product-form';
 
 export default function AddProductPage() {
   return (
-    <main className="p-4 py-20">
+    <main className="p-4 pb-20">
       <Card className="max-w-sm mx-auto">
         <CardHeader>
           <CardTitle>Add a product to the list</CardTitle>
