@@ -1,3 +1,5 @@
+import { productBrands } from '../constants/iterables';
+
 export interface ProductListData {
   id: number;
   title: string;
@@ -22,4 +24,18 @@ export interface GetProductsResponse {
   limit: number;
 }
 
+export interface AddProductRequest {
+  title: string;
+  description: string;
+  price: number;
+  discountPercentage?: number;
+  brand: ProductBrand;
+}
+
+export interface AddProductResponse extends AddProductRequest {
+  id: number;
+}
+
 export type ItemViewType = 'list' | 'grid';
+
+export type ProductBrand = (typeof productBrands)[number];
