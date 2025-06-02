@@ -1,17 +1,15 @@
 'use client';
 
-import { getProducts } from '@/lib/api/products';
-import { useQuery } from '@tanstack/react-query';
 import { cn } from '@/lib/utils';
 import { useProductListStore } from '@/providers/product-list-store';
 import Item from './item';
+import { GetProductsResponse } from '@/lib/types/products';
 
-export default function ProductList() {
-  const { data } = useQuery({
-    queryKey: ['products'],
-    queryFn: () => getProducts(),
-  });
+interface Props {
+  data: GetProductsResponse;
+}
 
+export default function ProductList({ data }: Props) {
   const { viewType, isViewTypeSetThisSession } = useProductListStore(
     (state) => state
   );

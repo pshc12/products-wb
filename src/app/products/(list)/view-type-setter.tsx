@@ -7,7 +7,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function ViewTypeProvider({ children }: Props) {
+export default function ViewTypeSetter({ children }: Props) {
   const { initializeViewType, isViewTypeSetThisSession } = useProductListStore(
     (state) => state
   );

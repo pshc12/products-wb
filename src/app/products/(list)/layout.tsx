@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import ViewTypeProvider from './view-type';
+import ViewTypeSetter from './view-type-setter';
 import AddButton from './add-button';
 
 interface Props {
@@ -8,13 +8,13 @@ interface Props {
 
 export default function ProductListLayout({ children }: Props) {
   return (
-    <ViewTypeProvider>
+    <ViewTypeSetter>
       <main className="p-4 py-20 w-full max-w-[960px] mx-auto">
         <div className="flex w-full justify-end mb-4">
           <AddButton />
         </div>
         {children}
       </main>
-    </ViewTypeProvider>
+    </ViewTypeSetter>
   );
 }
