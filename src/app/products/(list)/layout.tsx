@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import ViewTypeSetter from './view-type-setter';
-import AddButton from './add-button';
+import ViewTypeSetter from './_components/view-type-setter';
+import AddButton from './_components/add-button';
 
 interface Props {
   children: ReactNode;

@@ -1,4 +1,4 @@
-import { productBrands } from '../constants/iterables';
+import { productBrands } from '@/constants/iterables';
 
 export interface ProductListData {
   id: number;

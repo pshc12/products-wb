@@ -1,4 +1,4 @@
-import { productBrands } from '@/lib/constants/iterables';
+import { productBrands } from '@/constants/iterables';
 import { z } from 'zod';
 
 export const formSchema = z.object({

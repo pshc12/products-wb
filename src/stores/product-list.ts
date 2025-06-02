@@ -1,6 +1,6 @@
 import { createStore } from 'zustand/vanilla';
-import { ItemViewType } from '@/lib/types/products';
 import { persist } from 'zustand/middleware';
+import { ItemViewType } from '@/types/products';
 
 export type ProductListState =
   | {

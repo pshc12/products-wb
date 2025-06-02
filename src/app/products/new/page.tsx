@@ -5,7 +5,7 @@ import {
   CardDescription,
   CardContent,
 } from '@/components/ui/card';
-import ProductForm from './form';
+import ProductForm from './_components/product-form';
 
 export default function AddProductPage() {
   return (

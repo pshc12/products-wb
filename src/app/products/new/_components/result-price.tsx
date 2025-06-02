@@ -1,4 +1,4 @@
-import { formatInt } from '@/lib/utils';
+import { formatInt } from '@/utils';
 import { useFormContext } from 'react-hook-form';
 
 export default function ResultPrice() {

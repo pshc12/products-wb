@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ADD_PRODUCT_PAGE } from '@/lib/constants/pages';
+import { ADD_PRODUCT_PAGE } from '@/constants/pages';
 import Link from 'next/link';
 
 export default function AddButton() {

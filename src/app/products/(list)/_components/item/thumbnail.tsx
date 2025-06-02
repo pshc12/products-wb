@@ -1,7 +1,7 @@
-import { ItemViewType } from '@/lib/types/products';
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils';
 import { memo } from 'react';
 import Image from 'next/image';
+import { ItemViewType } from '@/types/products';
 
 interface Props {
   thumbnail: string;

@@ -1,9 +1,9 @@
 'use client';
 
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils';
 import { useProductListStore } from '@/providers/product-list-store';
 import Item from './item';
-import { GetProductsResponse } from '@/lib/types/products';
+import { GetProductsResponse } from '@/types/products';
 
 interface Props {
   data: GetProductsResponse;

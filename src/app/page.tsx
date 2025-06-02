@@ -1,4 +1,4 @@
-import { PRODUCT_LIST_PAGE } from '@/lib/constants/pages';
+import { PRODUCT_LIST_PAGE } from '@/constants/pages';
 import { redirect } from 'next/navigation';
 
 export default function Home() {

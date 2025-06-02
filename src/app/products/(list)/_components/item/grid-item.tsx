@@ -1,8 +1,8 @@
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { ProductListData } from '@/lib/types/products';
 import { memo } from 'react';
 import Rating from './rating';
 import Thumbnail from './thumbnail';
+import { ProductListData } from '@/types/products';
 
 interface Props {
   data: ProductListData;

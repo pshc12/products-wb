@@ -1,6 +1,6 @@
 'use server';
 
-import { AddProductRequest, AddProductResponse } from '../types/products';
+import { AddProductRequest, AddProductResponse } from '@/types/products';
 
 const BASE_API_URL = 'https://dummyjson.com';
 

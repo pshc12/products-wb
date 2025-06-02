@@ -19,10 +19,10 @@ import {
 } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
 import ResultPrice from './result-price';
-import { productBrands } from '@/lib/constants/iterables';
+import { productBrands } from '@/constants/iterables';
 import { Loader2Icon } from 'lucide-react';
-import { toOptionalInt } from '@/lib/utils';
-import useProductForm from '@/lib/hooks/use-product-form';
+import { toOptionalInt } from '@/utils';
+import useProductForm from '@/hooks/use-product-form';
 
 export default function ProductForm() {
   const { form, onSubmit } = useProductForm();

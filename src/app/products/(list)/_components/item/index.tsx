@@ -1,4 +1,4 @@
-import { ProductListData, ItemViewType } from '@/lib/types/products';
+import { ProductListData, ItemViewType } from '@/types/products';
 import GridItem from './grid-item';
 import ListItem from './list-item';
 import { memo } from 'react';
