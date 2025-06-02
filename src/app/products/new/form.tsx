@@ -25,7 +25,9 @@ import { toOptionalInt } from '@/lib/utils';
 import useProductForm from '@/lib/hooks/use-product-form';
 
 export default function ProductForm() {
-  const { form, onSubmit, mutation } = useProductForm();
+  const { form, onSubmit } = useProductForm();
+
+  const { isSubmitting } = form.formState;
 
   return (
     <Form {...form}>
@@ -149,12 +151,8 @@ export default function ProductForm() {
 
         <ResultPrice />
 
-        <Button
-          type="submit"
-          className="w-full mt-2"
-          disabled={mutation.isPending}
-        >
-          {mutation.isPending && <Loader2Icon className="animate-spin" />}
+        <Button type="submit" className="w-full mt-2" disabled={isSubmitting}>
+          {isSubmitting && <Loader2Icon className="animate-spin" />}
           Add Product
         </Button>
       </form>
